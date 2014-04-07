@@ -428,5 +428,6 @@ End Sub
 
 'RunAllTests
 Public Sub RunAllTests()
-  Runtests New Tst_Data
+  RunTests New TestSuite
 End Sub
+

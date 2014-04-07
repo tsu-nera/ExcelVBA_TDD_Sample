@@ -2,4 +2,6 @@
 ./src/Data.cls
 
 ' test
-./test/Tst_Data.cls
+./test/TestSuite.cls
+./test/Test_Data.cls
+./test/Test_Data2.cls

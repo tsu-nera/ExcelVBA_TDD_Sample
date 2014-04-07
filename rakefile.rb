@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
 require 'rake/clean'
 
-FILE_PATH  = "./test.xlsm"
+EXCEL_FILE  = "sample.xlsm"
+MACRO_EXEC_FILE = "test.vbs"
 
-task :default => "open"
+task :default => "test"
 
+desc "Open Excel File"
 task :open do
-  `cygstart  #{FILE_PATH}` 
+  `cygstart #{EXCEL_FILE}` 
 end
 
+desc "Reload All Modules"
+task :reload do
+  p "to be implemented"
+end
+
+desc "Run All Tests"
 task :test do
-  `cygstart test.vbs` 
+  `cygstart #{MACRO_EXEC_FILE} #{EXCEL_FILE}`
 end

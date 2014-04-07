@@ -2,7 +2,7 @@ VERSION 1.0 CLASS
 BEGIN
   MultiUse = -1  'True
 END
-Attribute VB_Name = "Tst_Data"
+Attribute VB_Name = "Test_Data2"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
@@ -15,7 +15,7 @@ Option Explicit
 Implements ITestCase
 
 Private Function ITestCase_TestCaseInstance() As ITestCase
-	Dim objResult As New Tst_Data
+	Dim objResult As New Test_Data2
 	' Test for cut/paste error - programmer forgot to change type of objResult.
 	'Debug.Assert TypeName(objResult) = TypeName(Me)
 	Set ITestCase_TestCaseInstance = objResult
